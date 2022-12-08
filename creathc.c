@@ -1,5 +1,5 @@
 #include "huffman.h"
-//Çó¹ş·òÂü±àÂë±í
+//æ±‚å“ˆå¤«æ›¼ç¼–ç è¡¨
 char **CrtHuffmanCode(HTNode * ht, short LeafNum)
 {
 	char *cd, **hc;    
@@ -28,7 +28,7 @@ char **CrtHuffmanCode(HTNode * ht, short LeafNum)
 		}
 		hc[i] = (char *)malloc((LeafNum - start) * sizeof(char));    
 		strcpy(hc[i], &cd[start]);
-		printf("%3dºÅ %3c Âë³¤:%2d;±àÂë:%s\n", ht[i].ch, ht[i].ch, LeafNum - start, &cd[start]);
+		printf("%3dÂºÃ… %3c Ã‚Ã«Â³Â¤:%2d;Â±Ã Ã‚Ã«:%s\n", ht[i].ch, ht[i].ch, LeafNum - start, &cd[start]);
 	}   
 	free(cd);    
 	return hc;
